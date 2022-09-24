@@ -45,7 +45,7 @@ public final class Base64Addon extends ItemAddon {
     @Contract(pure = true)
     @Override
     public @NotNull String getVersion() {
-        return "1.0.0";
+        return "1.0.1";
     }
 
     private ItemStack getFromBase64(final String base64) {
@@ -59,5 +59,10 @@ public final class Base64Addon extends ItemAddon {
         texture.setString("Value", base64);
 
         return nbti.getItem();
+    }
+
+    @Override
+    public String getUrl() {
+        return "https://github.com/Lapzupi/CM-Base64-Addon/releases";
     }
 }
